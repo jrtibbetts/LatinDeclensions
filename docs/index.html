@@ -60,22 +60,33 @@
                   }
       td          { vertical-align: top; }
       th          {
+        font-family: sans-serif;
         font-size: larger;
         font-weight: bold;
-        font-family: sans-serif;
         vertical-align: bottom;
       }
       table       { border: none; }
-      .etymo      { font-size: smaller; text-align: right; }
+
+      .case {
+        font-family: sans-serif;
+      }
+      .etymo      {
+        display: block;
+        font-size: smaller;
+        text-align: center;
+      }
       .latin      {
+        font-family: sans-serif;
         font-size: larger;
         font-weight: bold;
         text-align: center;
-        font-family: sans-serif;
       }
       .decl       { font-weight: bold; }
       .stem       { font-style: italic; }
-      .end        { font-weight: bold; }
+      .end        {
+        font-weight: bold;
+        text-align: center;
+      }
       .gen        { font-style: italic; }
 
       .declI      { background-color: #cff; width: 12%; }
@@ -88,7 +99,7 @@
 
   <body>
 
-    <h1>The Periodic Table of Latin Declensions</h1>
+    <h1>Table of Latin Declensions</h1>
 
     <p>Roll over each highlighted ending to see all the cases and declensions where it occurs.</p>
 
@@ -290,6 +301,8 @@
         </tr>
       </tbody>
     </table>
+
+    <p>&copy; 2006 Jason R Tibbetts</p>
   </body>
 </html>
 
