@@ -26,9 +26,9 @@
           var elem = elems[i];
 
           if (show == "true") {
-            elem.style.visibility = 'visible';
+            elem.style.display = 'inline';
           } else {
-            elem.style.visibility = 'hidden';
+            elem.style.display = 'none';
           }
         }
       }
@@ -68,11 +68,11 @@
       .end        { font-weight: bold; }
       .gen        { font-style: italic; }
 
-      .declI      { background-color: #cff; }
-      .declII     { background-color: #9ff; }
-      .declIII    { background-color: #6ff; }
-      .declIV     { background-color: #3ff; }
-      .declV      { background-color: #0ff; }
+      .declI      { background-color: #cff; width: 12%; }
+      .declII     { background-color: #9ff; width: 12%; }
+      .declIII    { background-color: #6ff; width: 12%; }
+      .declIV     { background-color: #3ff; width: 12%; }
+      .declV      { background-color: #0ff; width: 12%; }
     </style>
   </head>
 
@@ -84,7 +84,7 @@
 
     <div style="text-align: center">
       <input type="submit" name="etymoButton" onclick="javascript: toggle('etymoButton', 'etymo'); return true;" value="Hide derivations"/>
-      <input type="submit" name="latinButton" onclick="javascript: toggle('latinButton', 'latin'); return true;" value="Hide Latin"/>
+      <!-- input type="submit" name="latinButton" onclick="javascript: toggle('latinButton', 'latin'); return true;" value="Hide Latin"/ -->
     </div>
 
     <table>
